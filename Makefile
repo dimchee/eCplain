@@ -1,5 +1,5 @@
 app: main.c
-	gcc -nostdlib -static main.c -o app
+	gcc -nostdlib -static main.c -Wno-builtin-declaration-mismatch -o app
 
 run: app
 	./app
